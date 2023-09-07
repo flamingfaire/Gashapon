@@ -17,12 +17,12 @@
 
 <body>
     <div class="header_bar">
-        <button class="modal_btns history-open" id="history-open">История</button>
+        <button class="modal_btns history-open" id="history-open">HISTORY</button>
         <div class="right_align_section">
             <div class="gem_amount">
-                Гемы: <span id="GEM_AMT"></span>
+                Gems: <span id="GEM_AMT"></span>
             </div>
-            <!--<button class="modal_btns open-button">PURCHASE</button>-->
+            <button class="modal_btns open-button">PURCHASE</button>
         </div>
     </div>
     <dialog class="modal" id="modal">
@@ -48,24 +48,24 @@
             <button class="purchase_btn" value="6000">ADD 6000 <span class="costs_value">$50</span></button>
             <button class="purchase_btn" value="12500">ADD 12500 <span class="costs_value">$100</span></button>
         </div>
-        <button class="button close-button">Закрыть</button>
+        <button class="button close-button">Close</button>
     </dialog>
     <dialog class="modal" id="historyModal">
-        <button class="modalClose history-close">Закрыть</button>
-        <button class="sort-star" value="5" id="sort5">Показать 5⋆</button>
-        <button class="sort-star" value="4" id="sort4">Показать 4⋆</button>
-        <button class="sort-star" value="3" id="sort3">Показать 3⋆</button>
+        <button class="modalClose history-close">Close</button>
+        <button class="sort-star" value="5" id="sort5">Show 5⋆</button>
+        <button class="sort-star" value="4" id="sort4">Show 4⋆</button>
+        <button class="sort-star" value="3" id="sort3">Show 3⋆</button>
         <span class="right_align">
-            <button class="reset-star active-star" id="resetter">Показать все</button>
+            <button class="reset-star active-star" id="resetter">Show All</button>
         </span>
         <div class="history-list" id="history-list">
             <table>
                 <tbody id="history-table">
                     <tr>
                         <th></th>
-                        <th>Название</th>
-                        <th>Дата</th>
-                        <th>Редкость</th>
+                        <th>Name</th>
+                        <th>Date</th>
+                        <th>Rating</th>
                     </tr>
                 </tbody>
             </table>
@@ -92,7 +92,6 @@
         <input class="banner_slider" type="radio" name="slider" id="item-2">
         <input class="banner_slider" type="radio" name="slider" id="item-3">
         <div class="cards">
-            
             <label class="cardzz" for="item-1" id="song-1">
                 <img src="./imgs/banner.png" alt="limited">
             </label>
@@ -114,12 +113,12 @@
     <div tabindex="-1" id="rate_info">
         &#9432
         <span class="tooltip">
-            Гарант 5* на каждый 135-й поклон, вероятность растёт начиная со 100 поклонов.
-            Гарант 4* на каждый 10-й поклон
+            5 star guaranteed at 135 summons with increases chances starting at 100.
+            4 star guaranteed every 10 summons
             <ul>
-                <li>5*: 0.7%</li>
-                <li>4*: 5.3%</li>
-                <li>3*: 94%</li>
+                <li>5 Star: 0.7%</li>
+                <li>4 Star: 5.3%</li>
+                <li>3 Star: 94%</li>
             </ul>
             <ul>
                 <li>Element attribute: Characters</li>
@@ -131,17 +130,17 @@
     <div class="container">
         <div class="box" id="cards-summoned"></div>
         <div class="summon_btns">
-            <button class="close">Назад</button>
-            <button id="resingle" value="100" id="asdf">1 Поклон</button>
-            <button id="remulti" id="asdf" value="1000">10 Поклонов</button>
+            <button class="close">Return Home</button>
+            <button id="resingle" value="100" id="asdf">1X SUMMON</button>
+            <button id="remulti" id="asdf" value="1000">10X SUMMON</button>
         </div>
     </div>
     <div class="summon_btns">
-        <button id="single" value="100" id="asdf" disabled>1 Поклон</button>
-        <button id="multi" id="asdf" value="1000" disabled>10 Поклонов</button>
+        <button id="single" value="100" id="asdf" disabled>1X SUMMON</button>
+        <button id="multi" id="asdf" value="1000" disabled>10X SUMMON</button>
     </div>
     <div class="landscape">
-        <p>Переключись на горизонтальный вид или разверни окно побольше</p>
+        <p>Switch to Landscape or increase viewport</p>
     </div>
 </body>
 <script type="module" src="./js/index.js"></script>
